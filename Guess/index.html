@@ -7,31 +7,61 @@
   <link rel="icon" type="image/png" href="assets/images/heart.png">
   <title>GUESS MY AGE</title>
   <script defer type="module" src="JS/main.js"></script>
+  <script defer type="module" src="JS/themes.js"></script>
   <link rel="stylesheet" href="settings/normalize.css">
   <link rel="stylesheet" href="settings/style.css">
 </head>
 
 <body>
+  <audio id="theme-audio" src="assets/loser.MP3"></audio>
   <header>
-    <h1>♡ Guess My Age ♡</h1>
+    <h1>☙ GUESS MY AGE ❧</h1>
   </header>
-  <p>
-    ¿Cuántos años tengo? Mi edad esta entre 1 y 100. Te dire si tu número es más alto o más bajo. ¿Jugamos?
-  </p>
-  <span id="attempMessage"></span>
-  <div>
-    <label for="">Adivina el numero:</label>
-    <input type="number">
-    <button>Enviar respuesta</button>
+  <div class="talking">
+    <div class="balloon">
+      <p>
+        ¿Cuántos años tengo? Mi edad esta entre <span id="start1"></span> y <span id="end1"></span>.<br>
+        Te dire si tu número es mayor o menor. ¿Jugamos?
+      </p>
+    </div>
   </div>
-  <div id="wrappedAttemps" style="display: flex; gap: 10px;">
+  
+  <div class="talking2">
+    <div class="left">
+      <p>
+        ¿Cuántos años tengo? Mi edad esta entre <span id="start2"></span> y <span id="end2"></span>.<br>
+      </p>
+    </div>
+    <div class="right">
+      <p>
+        Te dire si tu número es mayor o menor. ¿Jugamos?
+      </p>
+    </div>
+  </div>
 
+
+  <div class="character">
+    <img src="assets/images/heart-tiles.svg" alt="Fondo" class="background-image" id="background-image">
+      <img src="assets/images/fun.png" alt="character" class="fun" id="fun-image">
   </div>
-  <span id="message"></span>
-  <br>
-  <button id="reset">Empezar de nuevo!</button>
+  
+
+  <div class="play">
+    <span id="attempMessage"></span>
+    <div class="input">
+      <label for="">Tu edad es:</label>
+      <input type="number" class="edad">
+      <button class="boton-enviar"></button>
+    </div>
+    <div id="wrappedAttemps" class="wrapped"></div>
+    <span id="message"></span>
+    <button id="reset" class="boton-reset"></button>
+  </div>
+
+
   <footer>
-
+    <p>©2024 Laura Luque - Todos los derechos reservado </p>
+    <img src="assets/images/heart.png" alt="heart" class="heart">
   </footer>
 </body>
 

@@ -1,33 +1,36 @@
-:root{
-    --yellow:hsl(47deg 88% 63%);
-    --whit: hsl(0deg 0% 100%);
-    --grey: hsl(0deg 0% 50%);
-    --black: hsl(0deg 0% 7%);
-}
-
+@import "../CSS/header.css";
+@import "../CSS/ballon.css";
+@import "../CSS/character.css";
+@import "../CSS/play.css";
+@import "../CSS/footer.css";
+@import "../CSS/colors.css";
 
 @font-face {
     font-family: Futura ;
-    src: url("/assets/fonts/Futura\ Heavy\ font.ttf");
+    src: url("/assets/fonts/Futura\ Light\ font.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: Futura ;
-    src: url("/assets/fonts/unicode.futurab.ttf");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: Futura ;
-    src: url("/assets/fonts/Futura\ Extra\ Black\ font.ttf");
+    src: url("/assets/fonts/Futura\ Bold\ font.ttf");
     font-weight: 700;
 }
 
 
 body{
+    display: grid;
+    min-height: 100vh;
     text-align: center;
-    background-color: var(--yellow);
     font-family: Futura,sans-serif;
-    min-height: 95vh;
+    grid-template-rows: 12% 16% 39% 25% 8%;
+    background-color: var(--background3);
+}
+
+
+
+@media (width >=700px){
+    body{
+        grid-template-rows: 10% 50% 30% 10%;
+    }
 }
