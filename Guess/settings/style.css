@@ -7,13 +7,13 @@
 
 @font-face {
     font-family: Futura ;
-    src: url("/assets/fonts/Futura\ Light\ font.ttf");
+    src: url("../assets/fonts/Futura\ Light\ font.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: Futura ;
-    src: url("/assets/fonts/Futura\ Bold\ font.ttf");
+    src: url("../assets/fonts/Futura\ Bold\ font.ttf");
     font-weight: 700;
 }
 
@@ -22,7 +22,7 @@ body{
     display: grid;
     min-height: 100vh;
     text-align: center;
-    font-family: Futura,sans-serif;
+    font-family: Futura,fantasy;
     grid-template-rows: 12% 16% 39% 25% 8%;
     background-color: var(--background3);
 }
