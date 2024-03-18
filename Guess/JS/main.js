@@ -94,7 +94,8 @@ function resetGame() {
   message.textContent = ''
   input.disabled = false
   mysteriousNumber= getNumberRandom(START_NUMBER,END_NUMBER); 
-  console.log( mysteriousNumber);  
+  console.log( mysteriousNumber);
+  changeTheme('fun')  
 }
 
 function validateNumber() {
