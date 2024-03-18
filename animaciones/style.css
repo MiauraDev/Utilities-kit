@@ -1,0 +1,155 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    gap: 20px;
+}
+
+.animation{
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:150px;;
+    overflow: hidden;
+}
+
+/* Animacion rotación-continua */
+    .rotate-continua{
+    background-color: #006341;
+    position: relative;
+    left: 40%;
+    bottom:  0%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: rotat 12s linear infinite;
+}
+
+@keyframes rotat {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ /* Añadir imagenes */
+
+.img1, .img2, .img3, .img4 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+.img1 {
+    top: 0;
+    left: 0;
+}
+
+.img2 {
+    top: 0;
+    right: 0;
+}
+
+.img3 {
+    bottom: 0;
+    left: 0;
+}
+
+.img4 {
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Animacion rebote */
+
+.bounce-effect {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 10%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Animacion Flip card */
+.flip-card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.flip-card div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card .front{
+    background: aqua;
+    transform: perspective(500px) rotateX(0deg);
+}
+
+.flip-card .back{
+    background: rgb(255 0 149);
+    transform: perspective(500px) rotateX(180deg);
+}
+
+.flip-card:hover .front{
+    transform: perspective(500px) rotateX(180deg);
+}
+
+.flip-card:hover .back{
+    transform: perspective(500px) rotateX(360deg);
+}

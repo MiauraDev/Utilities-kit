@@ -1,8 +1,0 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background1);
-    color: var(--txt1);
-    font-size: 1rem;
-}
