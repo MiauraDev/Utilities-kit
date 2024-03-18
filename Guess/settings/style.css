@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: Futura ;
+    font-family: Futura;
     src: url("../assets/fonts/Futura\ Bold\ font.ttf");
     font-weight: 700;
 }
@@ -22,7 +22,8 @@ body{
     display: grid;
     min-height: 100vh;
     text-align: center;
-    font-family: Futura,fantasy;
+    /* stylelint-disable-next-line font-family-name-quotes */
+    font-family: "Futura", 'Poppins', sans-serif;
     grid-template-rows: 12% 16% 39% 25% 8%;
     background-color: var(--background3);
 }
